@@ -1,0 +1,2 @@
+30 9-17 * * 1-5 /Users/javiergracia/Documents/BIG_DATA/proyecto1/scrapper/scrapper.py
+30 18 * * 1-5 /Users/javiergracia/Documents/BIG_DATA/proyecto1/scrapper/scrapper.py

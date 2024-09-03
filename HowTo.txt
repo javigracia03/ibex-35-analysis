@@ -1,0 +1,58 @@
+
+### Howto para la Ejecución de Scripts y Funciones Correspondientes
+
+#### Scripts de Extracción de Datos
+
+Estos scripts se encargan de obtener los archivos .csv indicados para cada consulta y de llamar a los scripts correspondientes para obtener los datos requeridos. A continuación, se incluyen detalles sobre la ejecución de cada script y la función específica que desempeñan los archivos X.py correspondientes.
+
+#### 1. script1.py
+- **Descripción**: Calcula las fechas de la semana actual, busca archivos .csv correspondientes a esa semana y llama al 1.py.
+- **Ejecución**:
+  $ python script1.py
+
+- **Función de 1.py**:
+  - **Descripción**: Genera un listado semanal donde se indica, para cada acción, su valor inicial, final, mínimo y máximo.
+
+#### 2. script2.py
+- **Descripción**: Calcula las fechas del último mes, busca archivos .csv correspondientes a ese mes y llama al 2.py.
+- **Ejecución**:
+  $ python script2.py
+
+- **Función de 2.py**:
+  - **Descripción**: Genera un listado mensual donde se indica, para cada acción, su valor inicial, final, mínimo y máximo.
+
+#### 3. script3.py
+- **Descripción**: Obtiene los archivos .csv dentro de un rango de fechas especificado y llama al 3.py.
+- **Ejecución**:
+  $ python script3.py '2024-04-22' '2024-05-03' "BBVA"
+
+- **Función de 3.py**:
+  - **Descripción**: Obtiene el valor mínimo y máximo de cotización de una acción dentro de un rango de fechas, así como los porcentajes de incremento y decremento desde el valor inicial hasta el mínimo y máximo.
+
+#### 4. script4.py
+- **Descripción**: Obtiene los archivos .csv del último mes y llama al 4.py.
+- **Ejecución**:
+  $ python script4.py "BBVA"
+
+- **Función de 4.py**:
+  - **Descripción**: Recupera el valor mínimo y máximo de cotización de una acción de la última hora, semana y mes.
+
+#### 5. script5.py, script6.py, script8.py, script9.py, script10.py
+- **Descripción**: Obtienen los archivos .csv del último mes y llaman a la función correspondiente.
+- **Ejecución**:
+  $ python scriptX.py
+
+- **Función de 5.py, 6.py, 7.py, 8.py**:
+  - **Descripción 5.py**: Muestra las 5 acciones que más han subido en la última semana y último mes.
+  - **Descripción 6.py**: Muestra las 5 acciones que más han bajado en la última semana y último mes.
+  - **Descripción 8.py**: Calcula el crecimiento porcentual del precio de cierre de las acciones por sector en el último mes.
+  - **Descripción 9.py**: Calcula el precio promedio de cierre de las acciones por sector en el último mes.
+  - **Descripción 10.py**: Calcular la productividad por acción, basándose en el valor de las acciones y el número de trabajadores del ultimo mes.
+
+#### 6. script7.py
+- **Descripción**: Obtiene los archivos .csv dentro de un rango de fechas especificado y llama al 7.py.
+- **Ejecución**:
+  $ python script7.py '2024-04-22' '2024-05-03' 3
+
+- **Función de 7.py**:
+  - **Descripción**: Muestra las acciones que han tenido un incremento del porcentaje especificado durante el período indicado.

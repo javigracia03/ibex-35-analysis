@@ -1,0 +1,1 @@
+0 21 * * 1-5 /Users/javiergracia/Documents/BIG_DATA/proyecto1/hdfs_upload/upload_hdfs.sh
